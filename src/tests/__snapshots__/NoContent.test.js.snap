@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoContent renders and matches our snapshot 1`] = `
+<div
+  className="no-content__outer"
+>
+  <div
+    className="grid-container"
+  >
+    <div
+      className="grid-x grid-margin-x "
+    >
+      <div
+        className="small-12 cell"
+      >
+        <div
+          className="no-content inner"
+        >
+          <div
+            className="no-content__box box"
+          >
+            <h4
+              className="no-content__text"
+            >
+              Sorry! Our request for the data timed out...
+            </h4>
+            <button
+              className="button no-content__button"
+              onClick={[Function]}
+            >
+              Try again
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

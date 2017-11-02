@@ -1,0 +1,85 @@
+$phone-ls-min: 480px
+$tablet-small-min: 600px
+$tablet-min: 768px
+$desktop-min: 1024px
+$desktop-wide-min: 1200px
+
+$phone-max: ($phone-ls-min - 1)
+$phone-ls-max: ($tablet-small-min - 1)
+$tablet-small-max: ($tablet-min - 1)
+$tablet-max: ($desktop-min - 1)
+$desktop-max: ($desktop-wide-min - 1)
+
+$phone-ls: "(min-width:#{$phone-ls-min})"
+$tablet-small: "(min-width:#{$tablet-small-min})"
+$tablet: "(min-width:#{$tablet-min})"
+$desktop: "(min-width:#{$desktop-min})"
+$desktop-wide: "(min-width:#{$desktop-wide-min})"
+
+$phone-only: "(max-width:#{$phone-max})"
+$phone-phone-ls-only: "(max-width:#{$phone-ls-max})"
+$phone-tablet-small-only: "(max-width:#{$tablet-small-max})"
+$phone-tablet-only: "(max-width:#{$tablet-max})"
+
+$phone-ls-only: "(min-width:#{$phone-ls-min}) and (max-width:#{$phone-ls-max})"
+$phone-ls-tablet-small-only: "(min-width:#{$phone-ls-min}) and (max-width:#{$tablet-small-max})"
+
+$tablet-small-only: "(min-width:#{$tablet-small-min}) and (max-width:#{$tablet-small-max})"
+$tablet-small-tablet-only: "(min-width:#{$tablet-small-min}) and (max-width:#{$tablet-max})"
+
+$tablet-only: "(min-width:#{$tablet-min}) and (max-width:#{$tablet-max})"
+$tablet-desktop-only: "(min-width:#{$tablet-min}) and (max-width:#{$desktop-max})"
+
+$desktop-only: "(min-width:#{$desktop-min}) and (max-width:#{$desktop-max})"
+
+$galaxys5: "(min-width: 360px)"
+$iphone6: "(min-width: 375px)"
+$iphone6plus: "(min-width: 414px)"
+
+$tablet-small-container: 582px
+$tablet-container: 744px
+$desktop-container: 994px
+$desktop-wide-container: 1164px
+
+$medium-min: 768px
+$large-min: 1024px
+
+$small-max: ($medium-min - 1)
+
+$medium: "(min-width:#{$medium-min})"
+$large: "(min-width:#{$large-min})"
+
+$small-only: "(max-width:#{$small-max})"
+
+$cell-margin-small-unitless: 0.625
+$cell-margin-medium-unitless: 0.9375
+$cell-margin-small: $cell-margin-small-unitless * 1rem
+$cell-margin-medium: $cell-margin-medium-unitless * 1rem
+
+=cell
+  flex-basis: auto
+  -webkit-box-flex: 0
+  flex: 0 0 auto
+  min-height: 0px
+  min-width: 0px
+
+=cell-with-gutter
+  margin-left: $cell-margin-small
+  margin-right: $cell-margin-small
+  @media #{$medium}
+    margin-left: $cell-margin-medium
+    margin-right: $cell-margin-medium
+
+=cell-width($columns)
+  $width: ($columns / 12) * 100%
+  width: $width    
+
+=cell-with-gutter-width($columns)
+  $width: ($columns / 12) * 100%
+  width: calc(#{$width} - (#{$cell-margin-small} * 2))
+  @media #{$medium}
+    width: calc(#{$width} - (#{$cell-margin-medium} * 2))
+
+$margin-width-small: ($cell-margin-small-unitless * 2) * 16px
+$margin-width-medium: ($cell-margin-medium-unitless * 2) * 16px
+$remove-width-small: 16px + $margin-width-small

@@ -1,0 +1,66 @@
+.credits
+  font-size: 16px
+  line-height: 1.1
+  @media #{$medium}
+    font-size: 18px
+
+.credits__box
+  $paddingTopBottom: 16px
+  padding-top: $paddingTopBottom
+  padding-bottom: $paddingTopBottom
+
+.credits__inspired-container,
+.credits__built-container
+  display: flex
+  justify-content: center
+  @media #{$medium}
+    justify-content: flex-start
+
+.credits__inspired-container
+  @media #{$medium}
+    justify-content: flex-start
+
+.credits__built-container
+  @media #{$medium}
+    justify-content: flex-end
+
+.credits__inspired
+  margin-bottom: 8px
+  @media #{$medium}
+    margin-bottom: 0
+
+.credits__built
+  $textWidthSmall: 54px
+  $logoWidthSmall: 90px
+  $textWidthMedium: 61px
+  $logoWidthMedium: 110px
+  position: relative
+  width: $textWidthSmall + $logoWidthSmall
+  @media #{$medium}
+    width: $textWidthMedium + $logoWidthMedium
+
+.credits__logo
+  display: inline-block
+
+.credits__logo--inspired
+  width: 90px
+  margin-left: 8px
+  @media #{$medium}
+    width: 140px
+
+.credits__logo--built
+  position: absolute
+  top: -26px
+  width: 90px
+  @media #{$medium}
+    width: 110px
+
+.credits__text
+  display: inline-block
+  font-weight: normal
+  line-height: 30px
+  @media #{$medium}
+    line-height: 60px
+  a
+    font-weight: 700
+    color: $black

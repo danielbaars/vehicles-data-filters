@@ -1,0 +1,26 @@
+.masthead
+  &.inner
+    @media #{$medium}
+      margin-top: $blockPaddingMedium
+
+.masthead__box
+  position: relative
+
+.masthead__logo
+  display: inline-block
+  width: 100%
+  @media #{$medium}
+    width: 410px
+  @media #{$large}
+    width: 570px
+
+.masthead__visual
+  display: none
+  @media #{$medium}
+    display: block
+    position: absolute
+    right: 0
+    bottom: 0
+    height: 120px + $innerPadding + $boxBorderWidth + $blockPaddingMedium
+  @media #{$large}
+    height: 185px

@@ -1,0 +1,462 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results renders and matches our snapshot 1`] = `
+Array [
+  <div
+    className="vehicle vehicle--car vehicle--id1"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Bugatti Veyron
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Bugatti Veyron"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg/520px-Bugatti_Veyron_16.4_%E2%80%93_Frontansicht_%281%29%2C_5._April_2012%2C_D%C3%BCsseldorf.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Bugatti Veyron
+            </div>
+            <div
+                className="swatch swatch--black"
+            />
+            <div
+                className="swatch swatch--red"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--airplane vehicle--id2"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Boeing 787 Dreamliner
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Boeing 787 Dreamliner"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/All_Nippon_Airways_Boeing_787-8_Dreamliner_JA801A_OKJ_in_flight.jpg/600px-All_Nippon_Airways_Boeing_787-8_Dreamliner_JA801A_OKJ_in_flight.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Boeing 787 Dreamliner
+            </div>
+            <div
+                className="swatch swatch--black"
+            />
+            <div
+                className="swatch swatch--green"
+            />
+            <div
+                className="swatch swatch--red"
+            />
+            <div
+                className="swatch swatch--white"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--train vehicle--id3"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        USRA 0-6-6
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="USRA 0-6-6"
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/UP_4466_Neil916.JPG/600px-UP_4466_Neil916.JPG"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                USRA 0-6-6
+            </div>
+            <div
+                className="swatch swatch--black"
+            />
+            <div
+                className="swatch swatch--white"
+            />
+            <div
+                className="swatch swatch--yellow"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--airplane vehicle--id4"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Canadair North Star
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Canadair North Star"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/BOAC_C-4_Argonaut_Heathrow_1954.jpg/600px-BOAC_C-4_Argonaut_Heathrow_1954.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Canadair North Star
+            </div>
+            <div
+                className="swatch swatch--blue"
+            />
+            <div
+                className="swatch swatch--green"
+            />
+            <div
+                className="swatch swatch--red"
+            />
+            <div
+                className="swatch swatch--yellow"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--airplane vehicle--id5"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Airbus A400M Atlas
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Airbus A400M Atlas"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/A400M-1969.jpg/600px-A400M-1969.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Airbus A400M Atlas
+            </div>
+            <div
+                className="swatch swatch--red"
+            />
+            <div
+                className="swatch swatch--white"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--airplane vehicle--id6"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Bloch MB.131
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Bloch MB.131"
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Bloch_MB_131_San_Diego_Air_%26_Space_Museum_3.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Bloch MB.131
+            </div>
+            <div
+                className="swatch swatch--blue"
+            />
+            <div
+                className="swatch swatch--brown"
+            />
+            <div
+                className="swatch swatch--yellow"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--train vehicle--id7"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Prairie 2-6-2
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Prairie 2-6-2"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/CFR_Steam_locomotive.jpg/600px-CFR_Steam_locomotive.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Prairie 2-6-2
+            </div>
+            <div
+                className="swatch swatch--grey"
+            />
+            <div
+                className="swatch swatch--red"
+            />
+            <div
+                className="swatch swatch--white"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--train vehicle--id8"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        EMD GP40
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="EMD GP40"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/EMD_GP40_B%26M_339_Wells_Maine.jpg/600px-EMD_GP40_B%26M_339_Wells_Maine.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                EMD GP40
+            </div>
+            <div
+                className="swatch swatch--black"
+            />
+            <div
+                className="swatch swatch--grey"
+            />
+            <div
+                className="swatch swatch--white"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--train vehicle--id9"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Amer 4-4-0
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Amer 4-4-0"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/440woodcut.jpg/600px-440woodcut.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Amer 4-4-0
+            </div>
+            <div
+                className="swatch swatch--black"
+            />
+            <div
+                className="swatch swatch--red"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--car vehicle--id10"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Ferrari F40
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Ferrari F40"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/F40_Ferrari_20090509.jpg/560px-F40_Ferrari_20090509.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Ferrari F40
+            </div>
+            <div
+                className="swatch swatch--red"
+            />
+            <div
+                className="swatch swatch--yellow"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--car vehicle--id11"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Lamborghini Huracán
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Lamborghini Huracán"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/2014-03-04_Geneva_Motor_Show_1379.JPG/440px-2014-03-04_Geneva_Motor_Show_1379.JPG"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Lamborghini Huracán
+            </div>
+            <div
+                className="swatch swatch--black"
+            />
+            <div
+                className="swatch swatch--white"
+            />
+        </div>
+    </div>
+</div>,
+  <div
+    className="vehicle vehicle--car vehicle--id12"
+>
+    <div
+        className="vehicle__brand vehicle__brand--top"
+    >
+        Porsche Carrera GT
+    </div>
+    <div
+        className="grid-x"
+    >
+        <div
+            className="vehicle__pic imgc"
+        >
+            <img
+                alt="Porsche Carrera GT"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Porsche_Carrera_GT_-_Goodwood_Breakfast_Club_%28July_2008%29.jpg/440px-Porsche_Carrera_GT_-_Goodwood_Breakfast_Club_%28July_2008%29.jpg"
+            />
+        </div>
+        <div
+            className="vehicle__colors"
+        >
+            <div
+                className="vehicle__brand vehicle__brand--side"
+            >
+                Porsche Carrera GT
+            </div>
+            <div
+                className="swatch swatch--green"
+            />
+            <div
+                className="swatch swatch--yellow"
+            />
+        </div>
+    </div>
+</div>,
+]
+`;

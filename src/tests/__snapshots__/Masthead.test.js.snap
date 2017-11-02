@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Masthead renders and matches our snapshot 1`] = `
+<div
+  className="masthead__outer"
+>
+  <div
+    className="grid-container"
+  >
+    <div
+      className="grid-x grid-margin-x "
+    >
+      <div
+        className="small-12 cell"
+      >
+        <div
+          className="masthead inner"
+        >
+          <div
+            className="masthead__box box"
+          >
+            <div
+              className="masthead__logo imgc"
+            >
+              <img
+                alt="logo"
+                src="traffic-meister-logo.svg"
+              />
+            </div>
+            <div
+              className="masthead__visual imgch"
+            >
+              <img
+                alt="vehicles"
+                src="vehicles.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

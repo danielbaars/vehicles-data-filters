@@ -1,0 +1,42 @@
+$blockPaddingSmall: 12px
+$blockPaddingMedium: 20px
+
+$innerPadding: 10px
+$boxBorderWidth: 4px
+$boxPaddingSmall: 12px
+$boxPaddingMedium: 24px
+
+body
+  background-color: $background-color
+  padding: $blockPaddingSmall 0
+  @media #{$medium}
+    padding: $blockPaddingMedium 0
+
+.masthead__outer,
+.content__outer,
+.no-content__outer
+  padding-bottom: $blockPaddingSmall
+  @media #{$medium}
+    padding-bottom: $blockPaddingMedium
+
+.inner
+  background-color: white
+  padding: $innerPadding
+  &.filters
+    margin-bottom: $blockPaddingSmall
+    @media #{$medium}
+      margin-bottom: 0
+
+.box
+  border: $boxBorderWidth solid black
+  padding: $boxPaddingSmall
+  @media #{$medium}
+    padding: $boxPaddingMedium
+
+a,
+input
+  &:focus
+    outline: none
+
+.grid-container
+  max-width: 64rem

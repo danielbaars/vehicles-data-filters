@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row renders and matches our snapshot 1`] = `
+<div
+  className="grid-container"
+>
+  <div
+    className="grid-x grid-margin-x class-name"
+  >
+    <div>
+      Some Child
+    </div>
+  </div>
+</div>
+`;

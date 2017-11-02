@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoResults renders and matches our snapshot 1`] = `
+<div
+  className="results__no-results"
+>
+  Please pick a filter and the vehicles that have met your criteria will show up here...
+</div>
+`;

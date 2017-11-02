@@ -1,0 +1,112 @@
+.results__no-results
+  text-align: center
+  font-size: 20px
+  color: $gray-600
+  @media #{$iphone6}
+    font-size: 21px
+  @media #{$medium}
+    text-align: left
+    font-size: 22px
+
+.vehicle
+  display: block
+  padding: 12px
+  margin-bottom: $boxPaddingSmall
+  background-color: white
+  color: $black
+  border: 1px solid black
+  @media #{$medium}
+    padding: 12px 16px 16px 16px
+    margin-bottom: $boxPaddingMedium
+  @media #{$large}
+    padding-top: 16px
+  &:last-child
+    margin-bottom: 0
+
+.vehicle__brand
+  margin-bottom: 8px
+  font-size: 16px
+  line-height: 1.1
+  font-weight: 700
+  @media #{$medium}
+    font-size: 18px
+  &--side
+    display: block
+    @media #{$medium}
+      display: none
+    @media #{$large}
+      display: block
+      margin-bottom: 12px
+  &--top
+    display: none
+    @media #{$medium}
+      display: block
+    @media #{$large}
+      display: none
+  &::before
+    display: inline-block
+    margin-right: 8px
+    font: normal normal normal 14px/1 FontAwesome
+    font-size: 14px
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    @media #{$medium}
+      font-size: 16px
+  .vehicle--car &
+    &::before
+      content: '\f1b9'
+  .vehicle--airplane &
+    &::before
+      content: '\f072'
+      font-size: 18px
+      @media #{$medium}
+        font-size: 20px
+  .vehicle--train &
+    &::before
+      content: '\f238'
+
+.vehicle__pic
+  +cell
+  +cell-width(5)
+  @media #{$medium}
+    +cell-width(7)
+  @media #{$large}
+    +cell-width(5)
+  img
+    border: 1px solid $gray-400
+  .vehicle--id9 & img
+    padding: 20px 10px
+
+.vehicle__colors
+  +cell
+  +cell-width(7)
+  @media #{$medium}
+    +cell-width(5)
+  @media #{$large}
+    +cell-width(7)
+  padding-left: 12px
+  text-align: left
+
+.swatch
+  $sizeSmall: 24px
+  $sizeMedium: 36px
+  $margin: 6px
+  display: inline-block
+  width: $sizeSmall
+  height: $sizeSmall
+  margin-right: $margin
+  @media #{$medium}
+      width: $sizeMedium
+      height: $sizeMedium
+  &--white
+    border: 1px solid $gray-500
+  &--yellow
+    border: 1px solid darken(yellow, 5%)
+  &:last-child
+    margin-right: 0
+
+$colors: red black white green yellow blue brown grey
+@each $color in $colors
+  .swatch--#{$color}
+    background-color: $color

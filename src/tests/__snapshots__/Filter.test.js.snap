@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter renders and matches our snapshot 1`] = `
+Array [
+  <h2
+    className="filters__title"
+>
+    Colors
+    :
+</h2>,
+  <div
+    className="filters__group input-group"
+>
+    <select
+        className="input-group-field filters__select filters__select--colors"
+        id="select-colors"
+        name="select-colors"
+        onChange={[Function]}
+        value=""
+    >
+        <option
+            disabled={true}
+            value=""
+        >
+            Select color
+        </option>
+        <option
+            value="red"
+        >
+            Red
+        </option>
+        <option
+            value="green"
+        >
+            Green
+        </option>
+        <option
+            value="blue"
+        >
+            Blue
+        </option>
+    </select>
+    <div
+        className="input-group-button"
+    >
+        <button
+            className="button small hollow"
+            disabled={true}
+        >
+            Clear
+        </button>
+    </div>
+</div>,
+]
+`;

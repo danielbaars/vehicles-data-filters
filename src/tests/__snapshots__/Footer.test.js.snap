@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders and matches our snapshot 1`] = `
+<div
+  className="footer__outer"
+>
+  <div
+    className="grid-container"
+  >
+    <div
+      className="grid-x grid-margin-x "
+    >
+      <div
+        className="small-12 cell"
+      >
+        <div
+          className="credits inner"
+        >
+          <div
+            className="credits__box box"
+          >
+            <div
+              className="grid-x grid-margin-x"
+            >
+              <div
+                className="small-12 medium-6 cell credits"
+              >
+                <div
+                  className="credits__inspired-container"
+                >
+                  <div
+                    className="credits__inspired"
+                  >
+                    <div
+                      className="credits__text"
+                    >
+                      Inspired by
+                    </div>
+                    <a
+                      className="credits__logo credits__logo--inspired imgc"
+                      href="http://www.sytac.nl/"
+                      target="_blank"
+                    >
+                      <img
+                        alt="logo--inspired"
+                        src="http://www.sytac.nl/wp-content/themes/sytac/images/sytac_new.png"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="small-12 medium-6 cell credits"
+              >
+                <div
+                  className="credits__built-container"
+                >
+                  <div
+                    className="credits__built"
+                  >
+                    <div
+                      className="credits__text"
+                    >
+                      Built by
+                    </div>
+                    <a
+                      className="credits__logo credits__logo--built imgc"
+                      href="https://github.com/danielbaars"
+                      target="_blank"
+                    >
+                      <img
+                        alt="logo--built"
+                        src="https://rawgit.com/danielbaars/5171605b94645c9e87e154c3486e4ef3/raw/c49b826993d925625ee819d51797ac29d05eba89/daniel-name-logo.svg"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
