@@ -12,8 +12,22 @@ import Filter from './Filter.js';
 
 export class ContentComponent extends Component {
   getOptions(key) {
+    return uniqueArrayFromObjectValues(this.filterDataForFilter(key), key);
+  }
+  filterDataForFilter(key) {
+    const empty = [undefined, null];
+    const otherKeys = ['colors', 'type', 'brand'].filter(state => state !== key);
+    const other1st = otherKeys[0];
+    const other2nd = otherKeys[1];
     const { data } = this.props;
-    return uniqueArrayFromObjectValues(this.props[key] ? data : this.filterData(), key);
+    return data.filter((vehicle) => {
+      const values = (otherKey) => {
+        return otherKey === 'colors' ? empty.concat(vehicle[otherKey]) : [...empty, vehicle[otherKey]];
+      };
+      const firstValues = values(other1st);
+      const secondValues = values(other2nd);
+      return firstValues.includes(this.props[other1st]) && secondValues.includes(this.props[other2nd]);
+    });
   }
   filterData() {
     const { data, colors, type, brand } = this.props;
@@ -27,9 +41,9 @@ export class ContentComponent extends Component {
         <Row>
           <div className="small-12 medium-6 cell">
             <FramedBox className='filters'>
-              <Filter keyValue='colors' placeholder='Select a color' options={this.getOptions('colors')} />
               <Filter keyValue='type' placeholder='Select a type' options={this.getOptions('type')} />
               <Filter keyValue='brand' placeholder='Select a brand' options={this.getOptions('brand')} />
+              <Filter keyValue='colors' placeholder='Select a color' options={this.getOptions('colors')} />
             </FramedBox>
           </div>
           <div className="small-12 medium-6 cell">
