@@ -2,7 +2,7 @@
 
 exports[`NoContent renders and matches our snapshot 1`] = `
 <div
-  className="no-content__outer"
+  className="no-content__outer outer"
 >
   <div
     className="grid-container"

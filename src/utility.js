@@ -1,5 +1,7 @@
 const alphabetizeArrayOfObjects = (array, key) => {
-  return array.sort((a, b) => a[key] - b[key]);
+  return array.sort((a, b) => {
+    return (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0);
+  });
 };
 
 const capFirstCharInString = (string) => {
@@ -7,7 +9,12 @@ const capFirstCharInString = (string) => {
 };
 
 const uniqueArrayFromObjectValues = (array, filter) => {
-  return [...new Set([].concat(...array.map(item => item[filter])).sort())];
+  const originalData = array;
+  const filteredData = originalData.map(item => item[filter]);
+  const flattenedData = [].concat(...filteredData);
+  const uniqueData = [...new Set(flattenedData)];
+  const sortedData = uniqueData.sort();
+  return sortedData;
 };
 
 export { alphabetizeArrayOfObjects, capFirstCharInString, uniqueArrayFromObjectValues };

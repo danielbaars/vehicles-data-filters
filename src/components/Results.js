@@ -1,28 +1,11 @@
-import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Vehicle from './Vehicle';
+
 const Results = ({ results }) => {
-  return _.map(results, (value) => {
-    const { brand, type, id, colors, img } = value;
-    return (
-      <div className={`vehicle vehicle--${type} vehicle--id${id}`} key={`brands_${brand}`}>
-        <div className='vehicle__brand vehicle__brand--top'>{brand}</div>
-        <div className='grid-x'>
-          <div className='vehicle__pic imgc'><img src={img} alt={brand} /></div>
-          <div className='vehicle__colors'>
-            <div className='vehicle__brand vehicle__brand--side'>{brand}</div>
-            {
-              colors.sort().map((color) => {
-                return (
-                  <div className={`swatch swatch--${color}`} key={`swatch--${color}`} />
-                );
-              })
-            }
-          </div>
-        </div>
-      </div>
-    );
+  return results.map((value) => {
+    return <Vehicle value={value} key={`brands__${value.id}`} />;
   });
 };
 

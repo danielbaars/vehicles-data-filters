@@ -1,8 +1,8 @@
-import * as types from '../constants/actionTypes';
+import { FILTER_OPTIONS } from '../constants/actionTypes';
 
 export default function filterOptions(key, value) {
   return {
-    type: types.FILTER_OPTIONS,
+    type: FILTER_OPTIONS,
     payload: { [key]: value },
   };
 }

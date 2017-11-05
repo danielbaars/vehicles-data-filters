@@ -2,7 +2,7 @@
 
 exports[`Masthead renders and matches our snapshot 1`] = `
 <div
-  className="masthead__outer"
+  className="masthead__outer outer"
 >
   <div
     className="grid-container"

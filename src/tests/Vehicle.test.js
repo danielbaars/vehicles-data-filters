@@ -1,10 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Row from '../grid/Row';
+import testData from './testData';
+import Vehicle from '../components/Vehicle';
 
-describe('Row', () => {
-  const component = <Row extraClasses='class-name'><div>Some Child</div></Row>;
+describe('Vehicle', () => {
+  const component = <Vehicle value={testData[0]} />;
   it('renders and matches our snapshot', () => {
     const rComponent = renderer.create(component);
     const tree = rComponent.toJSON();

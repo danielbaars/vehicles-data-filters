@@ -6,6 +6,13 @@ Array [
     className="filters__title"
 >
     Colors
+    <span
+        className="filters__amount"
+    >
+         (
+        3
+        )
+    </span>
     :
 </h2>,
   <div

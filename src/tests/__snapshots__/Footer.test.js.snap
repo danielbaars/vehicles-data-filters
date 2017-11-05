@@ -2,7 +2,7 @@
 
 exports[`Footer renders and matches our snapshot 1`] = `
 <div
-  className="footer__outer"
+  className="footer__outer outer"
 >
   <div
     className="grid-container"
@@ -23,7 +23,7 @@ exports[`Footer renders and matches our snapshot 1`] = `
               className="grid-x grid-margin-x"
             >
               <div
-                className="small-12 medium-6 cell credits"
+                className="small-12 medium-6 credits cell"
               >
                 <div
                   className="credits__inspired-container"
@@ -50,7 +50,7 @@ exports[`Footer renders and matches our snapshot 1`] = `
                 </div>
               </div>
               <div
-                className="small-12 medium-6 cell credits"
+                className="small-12 medium-6 credits cell"
               >
                 <div
                   className="credits__built-container"

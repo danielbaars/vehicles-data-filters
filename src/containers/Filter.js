@@ -2,7 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import filterOptions from '../actions';
+import filterOptions from '../actions/filterOptions';
 import { capFirstCharInString } from '../utility';
 
 const Option = ({ option }) => {
@@ -14,7 +14,7 @@ const Option = ({ option }) => {
 export const FilterComponent = (props) => {
   const { keyValue, placeholder, options } = props;
   return [
-    <h2 className='filters__title' key={`${keyValue}__title`}>{capFirstCharInString(keyValue)} ({options.length}):</h2>,
+    <h2 className='filters__title' key={`${keyValue}__title`}>{capFirstCharInString(keyValue)}<span className='filters__amount'> ({options.length})</span>:</h2>,
     <div className='filters__group input-group' key={`${keyValue}__select`}>
       <select onChange={event => props.filterOptions(keyValue, event.target.value)} name={`select-${keyValue}`} id={`select-${keyValue}`} value={options.length === 1 ? options[0] : (props[keyValue] || '')} className={`input-group-field filters__select filters__select--${keyValue}`}>
         <option value='' disabled>{placeholder}</option>

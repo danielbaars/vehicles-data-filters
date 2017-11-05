@@ -1,10 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import App from '../components/App';
+import { AppComponent } from '../containers/App';
 
 describe('App', () => {
+  const mockFetchData = jest.fn();
   it('renders without crashing', () => {
-    shallow(<App />);
+    shallow(<AppComponent fetchData={mockFetchData} error={false} />);
   });
 });

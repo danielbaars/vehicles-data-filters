@@ -1,24 +1,26 @@
 import React from 'react';
 
-import Row from './Row';
+import logo from '../img/traffic-meister-logo.svg';
+import visual from '../img/vehicles.png';
+
+import Outer from '../grid/Outer';
+import Column from '../grid/Column';
 import FramedBox from './FramedBox';
 
 const Masthead = () => {
   return (
-    <div className='masthead__outer'>
-      <Row>
-        <div className='small-12 cell'>
-          <FramedBox className='masthead'>
-            <div className='masthead__logo imgc'>
-              <img src={require('../img/traffic-meister-logo.svg')} alt="logo" />
-            </div>
-            <div className='masthead__visual imgch'>
-              <img src={require('../img/vehicles.png')} alt="vehicles" />
-            </div>
-          </FramedBox>
-        </div>
-      </Row>
-    </div>
+    <Outer className='masthead'>
+      <Column>
+        <FramedBox className='masthead'>
+          <div className='masthead__logo imgc'>
+            <img src={logo} alt="logo" />
+          </div>
+          <div className='masthead__visual imgch'>
+            <img src={visual} alt="vehicles" />
+          </div>
+        </FramedBox>
+      </Column>
+    </Outer>
   );
 };
 

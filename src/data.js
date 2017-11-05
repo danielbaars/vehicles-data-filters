@@ -93,11 +93,13 @@ var trafficMeister;
   };
 
   function fetchData(cb) {
+    const notSoLikely = Math.floor(Math.random() * 20) === 2;
+    // const fiftyFifty = Math.random() >= 0.5;
     if (!cb) { // eslint-disable-next-line
       throw 'Callback not defined';
     }
     setTimeout(function() {
-      if (Math.floor(Math.random() * 20) === 2) {
+      if (notSoLikely) {
         cb('Fetch data error')
       } else {
         cb(null, data);

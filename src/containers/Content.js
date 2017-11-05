@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { uniqueArrayFromObjectValues } from '../utility';
 
-import Row from '../components/Row';
+import Outer from '../grid/Outer';
+import Column from '../grid/Column';
 import FramedBox from '../components/FramedBox';
 import Results from '../components/Results';
 import NoResults from '../components/NoResults';
@@ -37,26 +38,24 @@ export class ContentComponent extends Component {
     const { colors, type, brand } = this.props;
     const noFilters = [colors, type, brand].every(state => state === undefined);
     return (
-      <div className="content__outer">
-        <Row>
-          <div className="small-12 medium-6 cell">
-            <FramedBox className='filters'>
-              <Filter keyValue='type' placeholder='Select a type' options={this.getOptions('type')} />
-              <Filter keyValue='brand' placeholder='Select a brand' options={this.getOptions('brand')} />
-              <Filter keyValue='colors' placeholder='Select a color' options={this.getOptions('colors')} />
-            </FramedBox>
-          </div>
-          <div className="small-12 medium-6 cell">
-            <FramedBox className='results'>
-              {
-                !noFilters
-                  ? <Results results={this.filterData()} />
-                  : <NoResults />
-              }
-            </FramedBox>
-          </div>
-        </Row>
-      </div>
+      <Outer className='content'>
+        <Column medium='6'>
+          <FramedBox className='filters'>
+            <Filter keyValue='type' placeholder='Select a type' options={this.getOptions('type')} />
+            <Filter keyValue='brand' placeholder='Select a brand' options={this.getOptions('brand')} />
+            <Filter keyValue='colors' placeholder='Select a color' options={this.getOptions('colors')} />
+          </FramedBox>
+        </Column>
+        <Column medium='6'>
+          <FramedBox className='results'>
+            {
+              !noFilters
+                ? <Results results={this.filterData()} />
+                : <NoResults />
+            }
+          </FramedBox>
+        </Column>
+      </Outer>
     );
   }
 }

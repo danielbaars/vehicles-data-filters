@@ -5,11 +5,10 @@ import testData from './testData';
 import Results from '../components/Results';
 
 describe('Results', () => {
-  const mockSetFilterState = jest.fn();
-  const component = <Results results={testData} setFilterState={mockSetFilterState} />;
+  const component = <Results results={testData} />;
   it('renders and matches our snapshot', () => {
-    const sComponent = renderer.create(component);
-    const tree = sComponent.toJSON();
+    const rComponent = renderer.create(component);
+    const tree = rComponent.toJSON();
     expect(tree).toMatchSnapshot();
   });
   it('contains the same number of vehicles components as the incoming data', () => {

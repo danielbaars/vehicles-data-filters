@@ -1,1 +1,3 @@
+export const FETCH_VEHICLES = 'FETCH_VEHICLES';
+export const FETCH_ERROR = 'FETCH_ERROR';
 export const FILTER_OPTIONS = 'FILTER_OPTIONS';

@@ -2,14 +2,10 @@
 
 exports[`Row renders and matches our snapshot 1`] = `
 <div
-  className="grid-container"
+  className="grid-x grid-margin-x class-name"
 >
-  <div
-    className="grid-x grid-margin-x class-name"
-  >
-    <div>
-      Some Child
-    </div>
+  <div>
+    Some Child
   </div>
 </div>
 `;
